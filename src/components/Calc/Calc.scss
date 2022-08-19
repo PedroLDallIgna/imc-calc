@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.card {
+  background: rgba(255, 255, 255, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 700px;
+  border-radius: 15px;
+  font-family: 'Poppins', sans-serif;
+
+  .content {
+    width: 400px;
+    transition: all 0.7s ease;
+
+    .title {
+      font-weight: Medium 500;
+      text-align: center;
+      color: #000000;
+    }
+
+    #result {
+      font-weight: 300;
+      font-size: 26px;
+      text-align: center;
+
+      @media (max-width: 700px) {
+        font-size: 24px;
+        transition: all 0.7s ease;
+      }
+    }
+
+    @media (max-width: 700px) {
+      width: 90%;
+      transition: all 0.5s ease;
+    }
+  }
+
+  @media (max-width: 700px) {
+    height: 100vw;
+    height: 100vh;
+    border-radius: 0;
+    transition: all 0.7s ease;
+  }
+}
